@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F52E915E-F3CD-4607-A6EE-64A2FB7C56AE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ncnn</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>G:\github_code\test_ncnn\ncnn-vs2013-master\src\layer;G:\github_code\test_ncnn\ncnn-vs2013-master\src;G:\github_code\opencv-3.4.3\build_vs2017\install\include;G:\github_code\opencv-3.4.3\build_vs2017\install\include\opencv;G:\github_code\opencv-3.4.3\build_vs2017\install\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\github_code\opencv-3.4.3\build_vs2017\install\x64\vc15\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\src\layer\x86;..\src;..\src\layer;..\opencv343\include\opencv2;..\opencv343\include\;..\opencv343\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\opencv343\x64\vc15\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\NugetPackages\OpenCV.2.4.10\build\native\include\opencv2;D:\NugetPackages\OpenCV.2.4.10\build\native\include\opencv;D:\NugetPackages\OpenCV.2.4.10\build\native\include;..\src\layer;..\src;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\NugetPackages\OpenCV.2.4.10\build\native\lib\x64\v120\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_world343d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_world343d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opencv_core2410.lib;opencv_highgui2410.lib;opencv_imgproc2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\examples_mtcnn\main.cpp" />
+    <ClCompile Include="..\examples_mtcnn\mtcnn.cpp" />
+    <ClCompile Include="..\src\allocator.cpp" />
+    <ClCompile Include="..\src\benchmark.cpp" />
+    <ClCompile Include="..\src\blob.cpp" />
+    <ClCompile Include="..\src\cpu.cpp" />
+    <ClCompile Include="..\src\layer.cpp" />
+    <ClCompile Include="..\src\layer\absval.cpp" />
+    <ClCompile Include="..\src\layer\argmax.cpp" />
+    <ClCompile Include="..\src\layer\batchnorm.cpp" />
+    <ClCompile Include="..\src\layer\bias.cpp" />
+    <ClCompile Include="..\src\layer\binaryop.cpp" />
+    <ClCompile Include="..\src\layer\bnll.cpp" />
+    <ClCompile Include="..\src\layer\clip.cpp" />
+    <ClCompile Include="..\src\layer\concat.cpp" />
+    <ClCompile Include="..\src\layer\convolution.cpp" />
+    <ClCompile Include="..\src\layer\convolutiondepthwise.cpp" />
+    <ClCompile Include="..\src\layer\crop.cpp" />
+    <ClCompile Include="..\src\layer\deconvolution.cpp" />
+    <ClCompile Include="..\src\layer\deconvolutiondepthwise.cpp" />
+    <ClCompile Include="..\src\layer\dequantize.cpp" />
+    <ClCompile Include="..\src\layer\detectionoutput.cpp" />
+    <ClCompile Include="..\src\layer\dropout.cpp" />
+    <ClCompile Include="..\src\layer\eltwise.cpp" />
+    <ClCompile Include="..\src\layer\elu.cpp" />
+    <ClCompile Include="..\src\layer\embed.cpp" />
+    <ClCompile Include="..\src\layer\exp.cpp" />
+    <ClCompile Include="..\src\layer\expanddims.cpp" />
+    <ClCompile Include="..\src\layer\flatten.cpp" />
+    <ClCompile Include="..\src\layer\innerproduct.cpp" />
+    <ClCompile Include="..\src\layer\input.cpp" />
+    <ClCompile Include="..\src\layer\instancenorm.cpp" />
+    <ClCompile Include="..\src\layer\interp.cpp" />
+    <ClCompile Include="..\src\layer\log.cpp" />
+    <ClCompile Include="..\src\layer\lrn.cpp" />
+    <ClCompile Include="..\src\layer\lstm.cpp" />
+    <ClCompile Include="..\src\layer\memorydata.cpp" />
+    <ClCompile Include="..\src\layer\mvn.cpp" />
+    <ClCompile Include="..\src\layer\normalize.cpp" />
+    <ClCompile Include="..\src\layer\padding.cpp" />
+    <ClCompile Include="..\src\layer\permute.cpp" />
+    <ClCompile Include="..\src\layer\pooling.cpp" />
+    <ClCompile Include="..\src\layer\power.cpp" />
+    <ClCompile Include="..\src\layer\prelu.cpp" />
+    <ClCompile Include="..\src\layer\priorbox.cpp" />
+    <ClCompile Include="..\src\layer\proposal.cpp" />
+    <ClCompile Include="..\src\layer\psroipooling.cpp" />
+    <ClCompile Include="..\src\layer\quantize.cpp" />
+    <ClCompile Include="..\src\layer\reduction.cpp" />
+    <ClCompile Include="..\src\layer\relu.cpp" />
+    <ClCompile Include="..\src\layer\reorg.cpp" />
+    <ClCompile Include="..\src\layer\reshape.cpp" />
+    <ClCompile Include="..\src\layer\rnn.cpp" />
+    <ClCompile Include="..\src\layer\roialign.cpp" />
+    <ClCompile Include="..\src\layer\roipooling.cpp" />
+    <ClCompile Include="..\src\layer\scale.cpp" />
+    <ClCompile Include="..\src\layer\shufflechannel.cpp" />
+    <ClCompile Include="..\src\layer\sigmoid.cpp" />
+    <ClCompile Include="..\src\layer\slice.cpp" />
+    <ClCompile Include="..\src\layer\softmax.cpp" />
+    <ClCompile Include="..\src\layer\split.cpp" />
+    <ClCompile Include="..\src\layer\spp.cpp" />
+    <ClCompile Include="..\src\layer\squeeze.cpp" />
+    <ClCompile Include="..\src\layer\tanh.cpp" />
+    <ClCompile Include="..\src\layer\threshold.cpp" />
+    <ClCompile Include="..\src\layer\tile.cpp" />
+    <ClCompile Include="..\src\layer\unaryop.cpp" />
+    <ClCompile Include="..\src\layer\x86\convolutiondepthwise_x86.cpp" />
+    <ClCompile Include="..\src\layer\x86\convolution_x86.cpp" />
+    <ClCompile Include="..\src\layer\yolodetectionoutput.cpp" />
+    <ClCompile Include="..\src\layer\yolov3detectionoutput.cpp" />
+    <ClCompile Include="..\src\mat.cpp" />
+    <ClCompile Include="..\src\mat_pixel.cpp" />
+    <ClCompile Include="..\src\modelbin.cpp" />
+    <ClCompile Include="..\src\net.cpp" />
+    <ClCompile Include="..\src\opencv.cpp" />
+    <ClCompile Include="..\src\paramdict.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

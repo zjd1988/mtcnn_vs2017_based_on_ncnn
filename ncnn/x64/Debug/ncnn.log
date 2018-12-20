@@ -1,0 +1,10 @@
+﻿  main.cpp
+g:\github_code\test_ncnn\mtcnn_vs2017_based_on_ncnn_git\mtcnn_vs2017_based_on_ncnn\src\mat.h(287): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+g:\github_code\test_ncnn\mtcnn_vs2017_based_on_ncnn_git\mtcnn_vs2017_based_on_ncnn\src\mat.h(341): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+g:\github_code\test_ncnn\mtcnn_vs2017_based_on_ncnn_git\mtcnn_vs2017_based_on_ncnn\examples_mtcnn\main.cpp(31): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+g:\github_code\test_ncnn\mtcnn_vs2017_based_on_ncnn_git\mtcnn_vs2017_based_on_ncnn\examples_mtcnn\main.cpp(31): warning C4267: “初始化”: 从“size_t”转换到“const int”，可能丢失数据
+g:\github_code\test_ncnn\mtcnn_vs2017_based_on_ncnn_git\mtcnn_vs2017_based_on_ncnn\examples_mtcnn\main.cpp(39): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+g:\github_code\test_ncnn\mtcnn_vs2017_based_on_ncnn_git\mtcnn_vs2017_based_on_ncnn\examples_mtcnn\main.cpp(75): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+g:\github_code\test_ncnn\mtcnn_vs2017_based_on_ncnn_git\mtcnn_vs2017_based_on_ncnn\examples_mtcnn\main.cpp(75): warning C4267: “初始化”: 从“size_t”转换到“const int”，可能丢失数据
+g:\github_code\test_ncnn\mtcnn_vs2017_based_on_ncnn_git\mtcnn_vs2017_based_on_ncnn\examples_mtcnn\main.cpp(83): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+  ncnn.vcxproj -> G:\github_code\test_ncnn\mtcnn_vs2017_based_on_ncnn_git\mtcnn_vs2017_based_on_ncnn\ncnn\x64\Debug\ncnn.exe
