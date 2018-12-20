@@ -5,7 +5,7 @@
 ## 使用
 
 
-直接git clone 到本地，然后使用vs2017打开ncnn文件夹下的ncnn.sln，编译。（依赖的Opencv已经添加）
+直接git clone 到本地，然后使用vs2017打开ncnn文件夹下的ncnn.sln。（依赖的Opencv库在opencv343下）
 * 1、解压opencv343\x64\vc15\bin\opencv_world343d.rar 到 ncnn\x64\Debug
 * 2、生成可执行文件
 * 3、查看结果
