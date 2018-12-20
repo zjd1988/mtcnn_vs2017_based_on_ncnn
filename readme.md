@@ -4,6 +4,6 @@
 
 ## 鸣谢
 
-1、 https://github.com/Tencent/ncnn
-2、 https://github.com/moli232777144/mtcnn_ncnn
-3、 https://github.com/ElegantGod/ncnn
+* 1、 https://github.com/Tencent/ncnn
+* 2、 https://github.com/moli232777144/mtcnn_ncnn
+* 3、 https://github.com/ElegantGod/ncnn
