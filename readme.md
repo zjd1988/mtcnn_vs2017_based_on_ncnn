@@ -7,7 +7,7 @@
 
 直接git clone 到本地，然后使用vs2017打开ncnn文件夹下的ncnn.sln。（依赖的Opencv库在opencv343下）
 * 1、解压opencv343\x64\vc15\bin\opencv_world343d.rar 到 ncnn\x64\Debug
-* 2、生成可执行文件
+* 2、生成可执行文件（只支持生成64位程序）
 * 3、查看结果
 
 注：目前只测试了test_picture函数，test_video并未测试
